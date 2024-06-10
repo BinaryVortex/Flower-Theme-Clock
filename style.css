@@ -1,0 +1,219 @@
+body {
+  background-color: #1C1C1E;
+}
+
+.div-wrapper {
+  width: 500px;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.lotus-flower {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 100px;
+}
+
+.petals-back {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  transform-origin: 100% 100%;
+}
+
+.petals-front {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  transform-origin: 100% 100%;
+  transform: rotate(15deg);
+}
+
+.petal {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(72, 201, 176), rgb(176, 72, 201),rgb(201, 176, 72));
+  background: linear-gradient(rgb(72, 201, 176), rgb(111, 72, 201),rgb(201, 72, 97));
+  border: 1px solid rgb(162, 201, 72);
+  border-radius: 0 100%;
+  transform-origin: 100% 100%;
+}
+
+.petals-back .petal {
+  opacity: 0.3;
+}
+
+.petals-front .petal {
+  opacity: 0.5;
+}
+
+.petal1 {
+  transform: rotate(30deg);
+}
+.petal2 {
+  transform: rotate(60deg);
+}
+.petal3 {
+  transform: rotate(90deg);
+}
+.petal4 {
+  transform: rotate(120deg);
+}
+.petal5 {
+  transform: rotate(150deg);
+}
+.petal6 {
+  transform: rotate(180deg);
+}
+.petal7 {
+  transform: rotate(210deg);
+}
+.petal8 {
+  transform: rotate(240deg);
+}
+.petal9 {
+  transform: rotate(270deg);
+}
+.petal10 {
+  transform: rotate(300deg);
+}
+.petal11 {
+  transform: rotate(330deg);
+}
+
+.clock-pointer {
+  display: block;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 150px;
+  border-radius: 0 40% 40% 0;
+  box-shadow: 0 0 15px black;
+  transform-origin: 2.5px 50%;
+  transform: rotate(-90deg);
+}
+
+#secondPointer {
+  width: 180px;
+  height: 2px;
+  background-color: #A21414;
+}
+
+#minutePointer {
+  width: 160px;
+  height: 5px;
+  background-color: #000000;
+}
+
+#hourPointer {
+  width: 120px;
+  height: 5px;
+  background-color: #000000;
+}
+
+#clockOrigin {
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  margin: 148px;
+  background-color: #A21414;
+  border-radius: 100%;
+}
+
+#timeDisplay {
+  padding: 10px;
+  color: #EDEDED;
+  text-align: center;
+  font-size: 60px;
+  font-family: Poppins;
+}
+
+#dateDisplay {
+  padding: 5px;
+  color: #EDEDED;
+  text-align: center;
+  font-size: 40px;
+  font-family: Poppins;
+}
+
+.div-btn {
+  width: 265px;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.btn-theme {
+  margin: 10px;
+	padding: 10px 15px;
+  font-family: Roboto;
+  font-size: 14px;
+	font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btn-theme:active {
+	position: relative;
+	top: 1px;
+}
+
+.btn-dark {
+	border: 1px solid #0B0E07;
+  box-shadow: inset 0px 1px 0px 0px #29BBFF;
+	background: linear-gradient(to bottom, #2DABF9 5%, #0688FA 100%);
+	background-color: #2DABF9;
+	color: #FFFFFF;
+}
+.btn-dark:hover {
+	background: linear-gradient(to bottom, #0688FA 5%, #2DABF9 100%);
+	background-color: #0688FA;
+}
+
+.btn-light {
+	border: 1px solid #DCDCDC;
+  box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+	background: linear-gradient(to bottom, #EDEDED 5%, #DFDFDF 100%);
+	background-color: #EDEDED;
+	color: #777777;
+  text-shadow: 0px 1px 0px #FFFFFF;
+}
+.btn-light:hover {
+	background: linear-gradient(to bottom, #DFDFDF 5%, #EDEDED 100%);
+	background-color: #DFDFDF;
+}
+
+footer {
+  padding: 20px;
+  font-family: Poppins;
+  color: #F5F5F5;
+  text-align: right;
+}
+
+.name-dark {
+  color: #91d4d0;
+  text-decoration: none;
+  background: linear-gradient(to right, #91d4d0 50%, #ff3300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name-light {
+  color: #1a238f;
+  text-decoration: none;
+  background: linear-gradient(to right, #1a238f 50%, #ff3300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
